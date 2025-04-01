@@ -74,6 +74,7 @@ class HaikunatorStringLookupTest {
     assertNotNull(s);
     assertTrue(s.endsWith("a-c-0000"));
   }
+
   @Test
   void testLookup4() {
     String s = lu.lookup(":4:0::");
