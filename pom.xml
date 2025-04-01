@@ -30,7 +30,7 @@
 
   <groupId>org.infrastructurebuilder.util</groupId>
   <artifactId>haikunator-commons-text</artifactId>
-  <version>2.0.1.0-SNAPSHOT</version>
+  <version>2.0.1.0</version>
   <packaging>jar</packaging>
 
   <name>${project.artifactId}</name>
@@ -41,7 +41,7 @@
     <connection>scm:git:${git.url}</connection>
     <url>scm:git:${git.url}</url>
     <developerConnection>scm:git:${git.url}</developerConnection>
-    <tag>HEAD</tag>
+    <tag>haikunator-commons-text-2.0.1.0</tag>
   </scm>
   <distributionManagement>
     <site>
