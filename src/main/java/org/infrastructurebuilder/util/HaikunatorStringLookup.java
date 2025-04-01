@@ -50,18 +50,16 @@ public final class HaikunatorStringLookup implements StringLookup {
     config[0] = "-";
     config[1] = "4";
     config[2] = "true";
-    config[3] = "";
-    config[4] = "";
-    config[5] = "";
+    config[3] = null;
+    config[4] = null;
+    config[5] = null;
 
     String[] s = key.split(SPLIT_STR);
     for (int i = 0; i < config.length; ++i) {
       config[i] = null;
       if (i < s.length) {
         s[i] = s[i].trim();
-        if (!s[i].isEmpty()) {
-          config[i] = s[i];
-        }
+        config[i] = (s[i].isEmpty()) ? null : s[i];
       }
       switch (i) {
       case 0:
