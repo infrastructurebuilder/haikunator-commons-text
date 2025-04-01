@@ -1,0 +1,6 @@
+.*
+!.gitignore
+target
+pom.xml-*
+*.iml
+*.code-workspace
