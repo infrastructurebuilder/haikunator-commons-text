@@ -17,6 +17,8 @@
  */
 package org.infrastructurebuilder.util;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Optional;
 import java.util.Random;
 
@@ -25,10 +27,12 @@ import org.apache.commons.text.lookup.StringLookup;
 import me.atrox.haikunator.Haikunator;
 
 public final class HaikunatorStringLookup implements StringLookup {
-
-  private static final String SPLIT_STR = ":";
   public static final String HAIKUNATOR = "haikunator";
   public static final HaikunatorStringLookup INSTANCE = new HaikunatorStringLookup();
+  public final static Map<String, StringLookup> map = new HashMap<String, StringLookup>(
+      Map.of(HAIKUNATOR, INSTANCE));
+  private static final String SPLIT_STR = ":";
+
 
   public final String getKey() {
     return HAIKUNATOR;
