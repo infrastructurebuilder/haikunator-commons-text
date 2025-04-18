@@ -29,10 +29,8 @@ import me.atrox.haikunator.Haikunator;
 public final class HaikunatorStringLookup implements StringLookup {
   public static final String HAIKUNATOR = "haikunator";
   public static final HaikunatorStringLookup INSTANCE = new HaikunatorStringLookup();
-  public final static Map<String, StringLookup> map = new HashMap<String, StringLookup>(
-      Map.of(HAIKUNATOR, INSTANCE));
+  public final static Map<String, StringLookup> map = new HashMap<String, StringLookup>(Map.of(HAIKUNATOR, INSTANCE));
   private static final String SPLIT_STR = ":";
-
 
   public final String getKey() {
     return HAIKUNATOR;
